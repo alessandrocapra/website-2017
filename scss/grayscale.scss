@@ -33,6 +33,7 @@ h6 {
   text-transform: uppercase;
 
   color: $orange;
+  text-shadow: 1px 1px 2px #000;
 }
 
 p {
@@ -67,8 +68,24 @@ a {
   &:focus,
   &:hover {
     text-decoration: none;
-
     color: darken($primary, 20%);
+  }
+
+  &.link {
+    text-decoration:none;
+    border-bottom: 2px solid $primary;
+    display: inline-block;
+    line-height: 1.5;
+    text-shadow:
+            2px 2px black,
+            2px -2px black,
+            -2px 2px black,
+            -2px -2px black;
+
+    &:hover {
+      text-decoration: none;
+      color: darken($primary, 20%);
+    }
   }
 }
 
@@ -229,32 +246,54 @@ a {
 
 .experiences-section {
   color: white;
-  //background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
-  //background-color: $dark;
-  background:
-          radial-gradient(black 15%, transparent 16%) 0 0,
-          radial-gradient(black 15%, transparent 16%) 8px 8px,
-          radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-          radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-  background-color:#282828;
-  background-size:16px 16px;
-  //-webkit-background-size: cover;
-  //-moz-background-size: cover;
-  //-o-background-size: cover;
-  //background-size: cover;
+  background: url('../img/sticky-notes_bw.png') no-repeat center center scroll;
+  background-color: $dark;
+  //background:
+  //        radial-gradient(black 15%, transparent 16%) 0 0,
+  //        radial-gradient(black 15%, transparent 16%) 8px 8px,
+  //        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  //        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  //background-color:#282828;
+  //background-size:16px 16px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /*.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+  .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+  }*/
 
   .project {
     display: block;
     width: 100%;
     min-height:400px;
-    background: rgba($dark, 0.9);
-    border: 1px groove rgba($gray-2, .3);
+    background: rgba(black, 0.8);
+    border: 3px solid rgba($gray-2, .3);
+    border-radius: 5px;
 
     margin-bottom:1.8em;
     padding:2em;
 
     h3 {
       color: $gray-2;
+    }
+
+    img.screenshot {
+      width:50%;
     }
   }
 }

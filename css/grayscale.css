@@ -27,7 +27,8 @@ h6 {
   margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #ffae00; }
+  color: #ffae00;
+  text-shadow: 1px 1px 2px #000; }
 
 p, span {
   font-size: 16px;
@@ -51,6 +52,15 @@ a {
   a:focus, a:hover {
     text-decoration: none;
     color: #1d9b6c; }
+  a.link {
+    text-decoration: none;
+    border-bottom: 2px solid #42DCA3;
+    display: inline-block;
+    line-height: 1.5;
+    text-shadow: 2px 2px black, 2px -2px black, -2px 2px black, -2px -2px black; }
+    a.link:hover {
+      text-decoration: none;
+      color: #1d9b6c; }
 
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -160,19 +170,41 @@ a {
 
 .experiences-section {
   color: white;
-  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
-  background-color: #282828;
-  background-size: 16px 16px; }
+  background: url("../img/sticky-notes_bw.png") no-repeat center center scroll;
+  background-color: #323232;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+  .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+  }*/ }
   .experiences-section .project {
     display: block;
     width: 100%;
     min-height: 400px;
-    background: rgba(50, 50, 50, 0.9);
-    border: 1px groove rgba(237, 237, 237, 0.3);
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(237, 237, 237, 0.3);
+    border-radius: 5px;
     margin-bottom: 1.8em;
     padding: 2em; }
     .experiences-section .project h3 {
       color: #ededed; }
+    .experiences-section .project img.screenshot {
+      width: 50%; }
 
 #map {
   width: 100%;

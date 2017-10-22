@@ -229,18 +229,26 @@ a {
 
 .experiences-section {
   color: white;
-  background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  //background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
+  //background-color: $dark;
+  background:
+          radial-gradient(black 15%, transparent 16%) 0 0,
+          radial-gradient(black 15%, transparent 16%) 8px 8px,
+          radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+          radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //-o-background-size: cover;
+  //background-size: cover;
 
   .project {
     display: block;
     width: 100%;
     min-height:400px;
-    background: $dark;
+    background: rgba($dark, 0.9);
+    border: 1px groove rgba($gray-2, .3);
 
     margin-bottom:1.8em;
     padding:2em;

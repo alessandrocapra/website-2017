@@ -160,17 +160,15 @@ a {
 
 .experiences-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px; }
   .experiences-section .project {
     display: block;
     width: 100%;
     min-height: 400px;
-    background: #323232;
+    background: rgba(50, 50, 50, 0.9);
+    border: 1px groove rgba(237, 237, 237, 0.3);
     margin-bottom: 1.8em;
     padding: 2em; }
     .experiences-section .project h3 {

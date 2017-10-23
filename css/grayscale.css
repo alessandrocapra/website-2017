@@ -40,6 +40,10 @@ p, span {
       font-size: 18px;
       line-height: 1.6;
       margin: 0 0 35px; } }
+  p.caption, span.caption {
+    font-size: .9em;
+    margin-top: 1em;
+    font-style: italic; }
 
 span.bold-orange {
   color: #ffae00; }

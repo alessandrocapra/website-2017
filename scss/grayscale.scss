@@ -208,6 +208,7 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: 100% 0% 0;
 
   p{
     text-align: center;
@@ -230,6 +231,7 @@ a {
   @media(min-width:768px) {
     height: 100%;
     padding: 0;
+    background-position: 100% 0%;
     .intro-body {
       .brand-heading {
         font-size: 5em;
@@ -361,6 +363,7 @@ a {
     outline: none;
     background-color: $orange;
   }
+  border-radius: 7px;
 }
 
 ul.banner-social-buttons {

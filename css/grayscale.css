@@ -144,7 +144,8 @@ a {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 100% 0% 0; }
   .masthead p, .masthead span {
     text-align: center; }
   .masthead .intro-body {
@@ -160,7 +161,8 @@ a {
   @media (min-width: 768px) {
     .masthead {
       height: 100%;
-      padding: 0; }
+      padding: 0;
+      background-position: 100% 0%; }
       .masthead .intro-body .brand-heading {
         font-size: 5em; }
       .masthead .intro-body .intro-text {
@@ -249,7 +251,8 @@ a {
 .btn-default {
   color: #ffae00;
   border: 2px solid #ffae00;
-  background-color: transparent; }
+  background-color: transparent;
+  border-radius: 7px; }
   .btn-default:focus, .btn-default:hover {
     color: black;
     border: 2px solid #ffae00;

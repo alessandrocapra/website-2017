@@ -6,6 +6,9 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var ghPages = require('gulp-gh-pages');
+var imagemin = require('gulp-imagemin');
+
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -27,6 +30,12 @@ gulp.task('sass', function() {
     .pipe(browserSync.reload({
       stream: true
     }))
+});
+
+gulp.task('images', function(){
+    return gulp.src('img/**/*.+(png|jpg|gif|svg)')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'))
 });
 
 // Minify compiled CSS
@@ -108,4 +117,9 @@ gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() 
   // Reloads the browser whenever HTML or JS files change
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('js/**/*.js', browserSync.reload);
+});
+
+gulp.task('deploy', function() {
+    return gulp.src('./**/*')
+        .pipe(ghPages());
 });

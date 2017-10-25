@@ -45,6 +45,19 @@ p, span {
     margin-top: 1em;
     font-style: italic; }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+  form input,
+  form textarea {
+    width: 450px;
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em; }
+
 span.bold-orange {
   color: #ffae00; }
 

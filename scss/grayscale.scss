@@ -56,6 +56,22 @@ p {
   }
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  input,
+  textarea {
+    width:450px;
+    border: none;
+    border-radius: 5px;
+    padding:1em;
+    margin-bottom:1em;
+  }
+}
+
 span {
   @extend p;
 

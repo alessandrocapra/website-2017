@@ -57,6 +57,9 @@ form {
     border-radius: 5px;
     padding: 1em;
     margin-bottom: 1em; }
+    form input[type=submit],
+    form textarea[type=submit] {
+      cursor: pointer; }
 
 span.bold-orange {
   color: #ffae00; }

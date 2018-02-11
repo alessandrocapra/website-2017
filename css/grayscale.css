@@ -45,7 +45,7 @@ p, span {
       margin: 0 0 35px; } }
   @media (max-width: 767px) {
     p, span {
-      font-size: 1em; } }
+      font-size: .8em; } }
   p.caption, span.caption {
     font-size: .9em;
     margin-top: 1em;
@@ -98,6 +98,9 @@ form {
   @media (max-width: 768px) {
     #form-messages {
       width: 350px; } }
+  @media (max-width: 320px) {
+    #form-messages {
+      font-size: .8em; } }
   #form-messages.success {
     border: 3px solid green;
     color: green; }
@@ -287,6 +290,9 @@ a {
         .experiences-section .project img.screenshot {
           width: 50%;
           margin-top: 0; } }
+      @media (max-width: 320px) {
+        .experiences-section .project img.screenshot {
+          width: 30%; } }
 
 #map {
   width: 100%;

@@ -193,7 +193,10 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 100% 0% 0; }
+  background-position: 100% 0%; }
+  @media (max-width: 320px) {
+    .masthead {
+      background-position: 100% 100%; } }
   .masthead p, .masthead span {
     text-align: center; }
   .masthead .intro-body {

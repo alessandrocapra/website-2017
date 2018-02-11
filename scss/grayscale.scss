@@ -104,6 +104,31 @@ form {
   }
 }
 
+#form-messages {
+  font-size: 1.2em;
+  padding: 1em;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  @include media(">desktop"){
+    width:450px;
+  }
+
+  @include media("<=tablet"){
+    width:350px;
+  }
+
+  &.success {
+    border: 3px solid green;
+    color: green;
+  }
+  &.error {
+    border: 3px solid red;
+    color: red;
+  }
+}
+
 span {
   @extend p;
 

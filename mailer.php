@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recipient = "hello@alessandrocapra.rocks";
 
     // Set the email subject.
-    $subject = "New contact from $name";
+    $subject = "New contact from $name on website alessandrocapra.rocks!";
 
     // Build the email content.
     $email_content = "Name: $name\n";

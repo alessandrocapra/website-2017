@@ -1,3 +1,4 @@
+@import "include-media";
 @import 'variables.scss';
 @import 'mixins.scss';
 body {
@@ -37,12 +38,12 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
   text-align: left;
 
   margin: 0 0 25px;
-  @media(min-width: 768px) {
+  @include media(">=phone"){
     font-size: 18px;
     line-height: 1.6;
 
@@ -56,19 +57,42 @@ p {
   }
 }
 
+iframe {
+  height: auto;
+  width:100%;
+
+  @include media(">=desktop"){
+    height:100%;
+  }
+
+  @include media(">=tablet"){
+    height:450px;
+  }
+}
+
 form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  width:100%;
 
   input,
   textarea {
-    width:450px;
+    width: 100%;
     border: none;
     border-radius: 5px;
     padding:1em;
     margin-bottom:1em;
+
+    @include media(">desktop"){
+      width:450px;
+    }
+
+    @include media("<=tablet"){
+      width:350px;
+    }
+
 
     &[type=submit]{
       cursor: pointer;
@@ -243,6 +267,14 @@ a {
   }
 }
 
+.btn-lg {
+  font-size:1em;
+
+  @include media(">=desktop"){
+    font-size: 1.25em;
+  }
+}
+
 .btn-circle {
   font-size: 26px;
 
@@ -268,8 +300,13 @@ a {
 }
 
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  @include media("<=tablet"){
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
 }
 
 .experiences-section {
@@ -321,7 +358,13 @@ a {
     }
 
     img.screenshot {
-      width:50%;
+      width:90%;
+      margin-top:2.5em;
+
+      @include media(">=desktop"){
+        width: 50%;
+        margin-top: 0;
+      }
     }
   }
 }

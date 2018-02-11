@@ -42,12 +42,12 @@
 })(jQuery); // End of use strict
 
 // Google Maps Scripts
-var map = null;
+// var map = null;
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-google.maps.event.addDomListener(window, 'resize', function() {
-  map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
-});
+// google.maps.event.addDomListener(window, 'load', init);
+// google.maps.event.addDomListener(window, 'resize', function() {
+//   map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+// });
 
 function init() {
   // Basic options for a simple Google Map
@@ -178,17 +178,17 @@ function init() {
 
   // Get the HTML DOM element that will contain your map
   // We are using a div with id="map" seen below in the <body>
-  var mapElement = document.getElementById('map');
+  // var mapElement = document.getElementById('map');
 
   // Create the Google Map using out element and options defined above
-  map = new google.maps.Map(mapElement, mapOptions);
+  // map = new google.maps.Map(mapElement, mapOptions);
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-  var image = 'img/map-marker.svg';
-  var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    icon: image
-  });
+  // var image = 'img/map-marker.svg';
+  // var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+  // var beachMarker = new google.maps.Marker({
+    // position: myLatLng,
+    // map: map,
+    // icon: image
+  // });
 }

@@ -55,7 +55,7 @@ p {
   }
 
   @include media("<tablet"){
-    font-size: 1em;
+    font-size: .8em;
   }
 
   &.caption{
@@ -121,6 +121,10 @@ form {
 
   @include media("<=tablet"){
     width:350px;
+  }
+
+  @include media("<=phone"){
+    font-size: .8em;
   }
 
   &.success {
@@ -398,6 +402,10 @@ a {
       @include media(">=desktop"){
         width: 50%;
         margin-top: 0;
+      }
+
+      @include media("<=phone"){
+        width: 30%;
       }
     }
   }

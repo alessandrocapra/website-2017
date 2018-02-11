@@ -55,7 +55,7 @@ p {
   }
 
   @include media("<tablet"){
-    font-size: .8em;
+    font-size: 1em;
   }
 
   &.caption{
@@ -124,7 +124,7 @@ form {
   }
 
   @include media("<=phone"){
-    font-size: .8em;
+    font-size: 1em;
   }
 
   &.success {

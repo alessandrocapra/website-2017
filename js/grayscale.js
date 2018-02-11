@@ -18,9 +18,6 @@
     // Submit the form using AJAX.
     $.ajax({
       type: 'POST',
-      xhrFields: {
-        withCredentials: true
-      },
       url: $(form).attr('action'),
       data: formData
     }).done(function(response) {

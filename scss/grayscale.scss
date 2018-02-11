@@ -37,6 +37,10 @@ h6 {
   text-shadow: 1px 1px 2px #000;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 p {
   font-size: 1em;
   line-height: 1.5;
@@ -209,6 +213,7 @@ a {
     .nav-link.active {
       outline: none;
       background-color: rgba(white, .3);
+      border-radius: 3px;
       &:hover {
         color: white;
       }

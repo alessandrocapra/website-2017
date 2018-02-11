@@ -47,11 +47,15 @@ p {
   text-align: left;
 
   margin: 0 0 25px;
-  @include media(">=phone"){
+  @include media(">=tablet"){
     font-size: 18px;
     line-height: 1.6;
 
     margin: 0 0 35px;
+  }
+
+  @include media("<tablet"){
+    font-size: 1em;
   }
 
   &.caption{
@@ -101,6 +105,31 @@ form {
     &[type=submit]{
       cursor: pointer;
     }
+  }
+}
+
+#form-messages {
+  font-size: 1.2em;
+  padding: 1em;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  @include media(">desktop"){
+    width:450px;
+  }
+
+  @include media("<=tablet"){
+    width:350px;
+  }
+
+  &.success {
+    border: 3px solid green;
+    color: green;
+  }
+  &.error {
+    border: 3px solid red;
+    color: red;
   }
 }
 

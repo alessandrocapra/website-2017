@@ -38,11 +38,14 @@ p, span {
   line-height: 1.5;
   text-align: left;
   margin: 0 0 25px; }
-  @media (min-width: 320px) {
+  @media (min-width: 768px) {
     p, span {
       font-size: 18px;
       line-height: 1.6;
       margin: 0 0 35px; } }
+  @media (max-width: 767px) {
+    p, span {
+      font-size: 1em; } }
   p.caption, span.caption {
     font-size: .9em;
     margin-top: 1em;
@@ -82,6 +85,25 @@ form {
     form input[type=submit],
     form textarea[type=submit] {
       cursor: pointer; }
+
+#form-messages {
+  font-size: 1.2em;
+  padding: 1em;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px; }
+  @media (min-width: 1025px) {
+    #form-messages {
+      width: 450px; } }
+  @media (max-width: 768px) {
+    #form-messages {
+      width: 350px; } }
+  #form-messages.success {
+    border: 3px solid green;
+    color: green; }
+  #form-messages.error {
+    border: 3px solid red;
+    color: red; }
 
 span.bold-orange {
   color: #ffae00; }

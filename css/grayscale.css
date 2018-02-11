@@ -45,7 +45,7 @@ p, span {
       margin: 0 0 35px; } }
   @media (max-width: 767px) {
     p, span {
-      font-size: .8em; } }
+      font-size: 1em; } }
   p.caption, span.caption {
     font-size: .9em;
     margin-top: 1em;
@@ -100,7 +100,7 @@ form {
       width: 350px; } }
   @media (max-width: 320px) {
     #form-messages {
-      font-size: .8em; } }
+      font-size: 1em; } }
   #form-messages.success {
     border: 3px solid green;
     color: green; }
